@@ -154,40 +154,60 @@ export default function Home() {
         </div>
       </nav>
 
-      {/* Hero Section */}
+      {/* Hero Section (MODIFIÉE POUR 2 COLONNES) */}
       <section className="pt-24 pb-16 sm:pt-32 sm:pb-20 lg:pt-40 lg:pb-32 px-4 sm:px-6 relative overflow-hidden">
+        {/* Effets de fond */}
         <div className="absolute inset-0">
           <div className="absolute top-1/4 right-0 w-64 h-64 sm:w-96 sm:h-96 bg-yellow-500/5 rounded-full blur-3xl"></div>
           <div className="absolute bottom-1/4 left-0 w-64 h-64 sm:w-96 sm:h-96 bg-yellow-500/5 rounded-full blur-3xl"></div>
         </div>
         
-        <div className="max-w-5xl mx-auto text-center relative z-10">
-          <h1 className="text-4xl sm:text-5xl lg:text-7xl xl:text-8xl font-bold mb-6 sm:mb-8 leading-tight tracking-tight">
-            AVERELL<span className="text-yellow-400">.STUDIO</span>
-          </h1>
+        {/* Conteneur Grid : Texte à gauche, Image à droite */}
+        <div className="max-w-7xl mx-auto relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           
-          <p className="text-base sm:text-xl lg:text-2xl xl:text-3xl text-gray-300 mb-4 sm:mb-6 leading-relaxed font-light max-w-4xl mx-auto px-4">
-            L'identité visuelle qui fait passer votre stream au niveau supérieur.
-          </p>
-          
-          <p className="text-sm sm:text-base lg:text-lg text-gray-400 mb-8 sm:mb-12 max-w-3xl mx-auto px-4">
-            Spécialiste en Branding Twitch, Emotes expressives et Illustrations Digital Painting.
-          </p>
-          
-          <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center items-center px-4">
-            <button
-              onClick={() => scrollToSection('expertise')}
-              className="bg-yellow-400 text-black px-8 sm:px-10 py-4 sm:py-5 text-base sm:text-lg font-bold hover:bg-yellow-500 transition-all hover:scale-105 uppercase tracking-wider w-full sm:w-auto"
-            >
-              Mes Réalisations
-            </button>
-            <button
-              onClick={() => scrollToSection('services')}
-              className="border-2 border-yellow-400 text-yellow-400 px-8 sm:px-10 py-4 sm:py-5 text-base sm:text-lg font-bold hover:bg-yellow-400 hover:text-black transition-all uppercase tracking-wider w-full sm:w-auto"
-            >
-              Commander
-            </button>
+          {/* COLONNE GAUCHE : TEXTE */}
+          <div className="text-center lg:text-left">
+            <h1 className="text-4xl sm:text-5xl lg:text-7xl xl:text-8xl font-bold mb-6 sm:mb-8 leading-tight tracking-tight">
+              AVERELL<span className="text-yellow-400">.STUDIO</span>
+            </h1>
+            
+            <p className="text-base sm:text-xl lg:text-2xl xl:text-3xl text-gray-300 mb-4 sm:mb-6 leading-relaxed font-light">
+              L'identité visuelle qui fait passer votre stream au niveau supérieur.
+            </p>
+            
+            <p className="text-sm sm:text-base lg:text-lg text-gray-400 mb-8 sm:mb-12">
+              Spécialiste en Branding Twitch, Emotes expressives et Illustrations Digital Painting.
+            </p>
+            
+            <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center lg:justify-start items-center">
+              <button
+                onClick={() => scrollToSection('expertise')}
+                className="bg-yellow-400 text-black px-8 sm:px-10 py-4 sm:py-5 text-base sm:text-lg font-bold hover:bg-yellow-500 transition-all hover:scale-105 uppercase tracking-wider w-full sm:w-auto rounded-lg shadow-[0_0_20px_rgba(250,204,21,0.3)]"
+              >
+                Mes Réalisations
+              </button>
+              <button
+                onClick={() => scrollToSection('services')}
+                className="border-2 border-yellow-400 text-yellow-400 px-8 sm:px-10 py-4 sm:py-5 text-base sm:text-lg font-bold hover:bg-yellow-400 hover:text-black transition-all uppercase tracking-wider w-full sm:w-auto rounded-lg"
+              >
+                Commander
+              </button>
+            </div>
           </div>
+
+          {/* COLONNE DROITE : IMAGE */}
+          <div className="relative flex justify-center lg:justify-end">
+             {/* Halo jaune derrière l'image */}
+             <div className="absolute inset-0 bg-gradient-to-tr from-yellow-400/20 to-transparent rounded-full blur-2xl transform scale-75"></div>
+             
+             {/* L'image elle-même */}
+             <img 
+               src="/images/hero-image.png" 
+               alt="Mascotte Averell Studio" 
+               className="relative w-full max-w-md lg:max-w-full object-contain drop-shadow-2xl animate-float"
+             />
+          </div>
+
         </div>
       </section>
 
