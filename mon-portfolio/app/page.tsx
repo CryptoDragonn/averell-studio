@@ -369,20 +369,22 @@ export default function Home() {
           </p>
           
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 mb-12 sm:mb-16">
+          {/* BOUTON DISCORD (SERVEUR) */}
             <a
-              href="https://discord.com/users/averell_studio"
+              href="https://discord.gg/2X9QGAA7je" 
+              /* 👆 Colle ton lien ici (ex: https://discord.gg/M4aKj8z) */
               target="_blank"
               rel="noopener noreferrer"
               className="bg-gradient-to-b from-gray-900 to-black border-2 border-gray-800 p-8 sm:p-10 hover:border-yellow-400 transition-all group"
             >
               <div className="text-5xl sm:text-6xl mb-4 sm:mb-6 group-hover:scale-110 transition-transform">💬</div>
               <h3 className="text-xl sm:text-2xl font-bold mb-2 uppercase tracking-wide text-yellow-400">Discord</h3>
-              <p className="text-sm sm:text-base text-gray-400">averell.studio</p>
-              <p className="text-xs sm:text-sm text-gray-600 mt-3 sm:mt-4">Cliquez pour me contacter</p>
+              <p className="text-sm sm:text-base text-gray-400">Rejoindre le serveur</p>
+              <p className="text-xs sm:text-sm text-gray-600 mt-3 sm:mt-4">Cliquez pour entrer</p>
             </a>
             
             <a
-              href="https://wa.me/0769887025"
+              href="https://wa.me/33769887025"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-gradient-to-b from-gray-900 to-black border-2 border-gray-800 p-8 sm:p-10 hover:border-yellow-400 transition-all group"
