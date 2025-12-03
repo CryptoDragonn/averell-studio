@@ -201,11 +201,11 @@ export default function Home() {
              <div className="absolute inset-0 bg-gradient-to-tr from-yellow-400/20 to-transparent rounded-full blur-2xl transform scale-75"></div>
              
              {/* L'image elle-même */}
-             <img 
-               src="/images/hero-image.png" 
-               alt="Mascotte Averell Studio" 
-               className="relative w-full max-w-md lg:max-w-full object-contain drop-shadow-2xl animate-float"
-             />
+            <img 
+  src="/images/hero-image.png" 
+  alt="Mascotte Averell Studio" 
+  className="relative w-full max-w-md lg:max-w-full object-contain drop-shadow-2xl animate-float"
+/>
           </div>
 
         </div>
